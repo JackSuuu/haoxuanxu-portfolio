@@ -24,7 +24,7 @@ const Index = () => {
       <div className="cursor-dot hidden md:block fixed w-4 h-4 rounded-full bg-background z-[100] pointer-events-none mix-blend-difference"></div>
       <div className="cursor-outline hidden md:block fixed w-8 h-8 rounded-full border border-background z-[99] pointer-events-none mix-blend-difference"></div>
       
-      {/* Custom cursor script */}
+      {/* Custom cursor script - simplified */}
       <script dangerouslySetInnerHTML={{
         __html: `
           document.addEventListener('DOMContentLoaded', function() {
@@ -41,11 +41,6 @@ const Index = () => {
                 
                 cursorOutline.style.left = \`\${posX}px\`;
                 cursorOutline.style.top = \`\${posY}px\`;
-                
-                cursorOutline.animate({
-                  left: \`\${posX}px\`,
-                  top: \`\${posY}px\`
-                }, { duration: 500, fill: 'forwards' });
               });
             }
           });
