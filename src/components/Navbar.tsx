@@ -45,14 +45,14 @@ const Navbar = () => {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
           >
-            <span className="opacity-0 animate-fade-in animation-delay-200">Portfolio</span>
+            <span className="animate-fade-in animation-delay-200">Portfolio</span>
           </a>
           
           <ul className="hidden md:flex items-center gap-8">
             {['about', 'projects'].map((item, index) => (
               <li 
                 key={item}
-                className={`opacity-0 animate-fade-in cursor-pointer`}
+                className={`cursor-pointer`}
                 style={{ animationDelay: `${(index + 3) * 100}ms` }}
                 onClick={() => scrollToSection(item)}
               >
@@ -65,7 +65,7 @@ const Navbar = () => {
           
           <div className="md:hidden flex items-center">
             <button 
-              className="opacity-0 animate-fade-in animation-delay-500 rounded-full p-2 focus:outline-none hover:bg-secondary transition-colors duration-200"
+              className="animation-delay-500 rounded-full p-2 focus:outline-none hover:bg-secondary transition-colors duration-200"
               onClick={() => {
                 const mobileNav = document.querySelector('.mobile-nav');
                 mobileNav?.classList.toggle('translate-y-0');

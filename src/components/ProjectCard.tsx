@@ -51,7 +51,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
     <div 
       ref={cardRef}
       className={cn(
-        "group opacity-0 relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-500",
+        "group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-500",
         "lg:even:translate-y-12"
       )}
       style={{ animationDelay: `${index * 150}ms` }}
@@ -68,7 +68,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           )}
         />
         <div className={cn(
-          "absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 transition-opacity duration-500",
+          "absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent transition-opacity duration-500",
           isHovered ? "opacity-100" : "group-hover:opacity-60"
         )}></div>
       </div>
@@ -94,7 +94,7 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           target="_blank" 
           rel="noopener noreferrer"
           className={cn(
-            "absolute top-4 right-4 p-2 rounded-full bg-white/10 backdrop-blur-md opacity-0 transform translate-y-4 transition-all duration-500",
+            "absolute top-4 right-4 p-2 rounded-full bg-white/10 backdrop-blur-md transform translate-y-4 transition-all duration-500",
             isHovered ? "opacity-100 translate-y-0" : "group-hover:opacity-100 group-hover:translate-y-0"
           )}
         >

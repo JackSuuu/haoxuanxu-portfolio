@@ -55,7 +55,7 @@ const About = () => {
         
         <h2 
           ref={titleRef}
-          className="text-3xl md:text-4xl font-medium tracking-tight mb-12 opacity-0"
+          className="text-3xl md:text-4xl font-medium tracking-tight mb-12"
         >
           Passionate about creating
           <br />
@@ -64,7 +64,7 @@ const About = () => {
         
         <div 
           ref={contentRef}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 opacity-0 animation-delay-300"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 animation-delay-300"
         >
           <div className="space-y-4">
             <h3 className="text-xl font-medium">Design Philosophy</h3>
@@ -89,7 +89,7 @@ const About = () => {
         </div>
         
         <div className="mt-24 grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="space-y-8 opacity-0 animate-fade-in animation-delay-500">
+          <div className="space-y-8 animate-fade-in animation-delay-500">
             <h3 className="text-2xl font-medium">Skills & Expertise</h3>
             
             <div className="space-y-6">
@@ -106,7 +106,7 @@ const About = () => {
               <div className="space-y-2">
                 <div className="flex justify-between items-center">
                   <h4 className="text-sm font-medium">Front-end Development</h4>
-                  <span className="text-xs text-muted-foreground">90%</span>
+                  <span className="text-xs text-muted-foreground">80%</span>
                 </div>
                 <div className="h-1 w-full bg-secondary rounded-full overflow-hidden">
                   <div className="h-full bg-primary w-[90%] rounded-full transition-all duration-1000 ease-in-out"></div>
@@ -135,13 +135,13 @@ const About = () => {
             </div>
           </div>
           
-          <div className="space-y-8 opacity-0 animate-fade-in animation-delay-700">
+          <div className="space-y-8 animation-delay-700">
             <h3 className="text-2xl font-medium">Education & Experience</h3>
             
             <div className="space-y-6">
               <div className="space-y-2 p-4 border border-border rounded-lg bg-glass-gradient backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:border-primary/20">
                 <div className="flex justify-between items-start">
-                  <h4 className="font-medium">Senior UI/UX Designer</h4>
+                  <h4 className="font-medium">University of Edinburgh</h4>
                   <span className="text-xs text-muted-foreground">2020 - Present</span>
                 </div>
                 <p className="text-sm text-muted-foreground">Leading design initiatives for digital products and creating cohesive user experiences across multiple platforms.</p>
@@ -155,6 +155,13 @@ const About = () => {
                 <p className="text-sm text-muted-foreground">Developed responsive and performant web applications using modern JavaScript frameworks and best practices.</p>
               </div>
               
+              <div className="space-y-2 p-4 border border-border rounded-lg bg-glass-gradient backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:border-primary/20">
+                <div className="flex justify-between items-start">
+                  <h4 className="font-medium">Bachelor's Degree in Design</h4>
+                  <span className="text-xs text-muted-foreground">2014 - 2018</span>
+                </div>
+                <p className="text-sm text-muted-foreground">Studied human-centered design principles, interaction design, and visual communication. Graduated with honors.</p>
+              </div>
               <div className="space-y-2 p-4 border border-border rounded-lg bg-glass-gradient backdrop-blur-sm transition-all duration-300 hover:shadow-md hover:border-primary/20">
                 <div className="flex justify-between items-start">
                   <h4 className="font-medium">Bachelor's Degree in Design</h4>

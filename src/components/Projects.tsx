@@ -83,7 +83,7 @@ const Projects = () => {
         
         <h2 
           ref={titleRef}
-          className="text-3xl md:text-4xl font-medium tracking-tight mb-12 opacity-0"
+          className="text-3xl md:text-4xl font-medium tracking-tight mb-12"
         >
           Selected projects
         </h2>
@@ -98,7 +98,7 @@ const Projects = () => {
           ))}
         </div>
         
-        <div className="mt-16 text-center opacity-0 animate-fade-in animation-delay-1000">
+        <div className="mt-16 text-center animate-fade-in animation-delay-1000">
           <a 
             href="#" 
             className="inline-flex items-center justify-center rounded-full px-6 py-3 bg-secondary hover:bg-secondary/80 transition-colors duration-300"
