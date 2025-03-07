@@ -8,8 +8,8 @@ const projects: ProjectProps[] = [
     title: "Minimalist E-commerce Platform",
     category: "Web Design",
     description: "A clean, modern e-commerce platform with intuitive navigation and seamless checkout experience.",
-    image: "https://images.unsplash.com/photo-1607082350899-7e105aa886ae?q=80&w=2070&auto=format&fit=crop",
-    link: "#"
+    image: "/img/1.png",
+    link: "£"
   },
   {
     id: 2,
