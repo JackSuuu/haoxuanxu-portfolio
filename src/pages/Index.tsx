@@ -7,8 +7,12 @@ import Projects from '../components/Projects';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    // Apply transition class immediately
+    setIsVisible(true);
+    
     // Simulate loading to ensure animations work properly
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -25,7 +29,7 @@ const Index = () => {
         </div>
       )}
       
-      <main className={`relative min-h-screen ${isLoading ? 'opacity-0' : 'opacity-100 transition-opacity duration-300'}`}>
+      <main className={`relative min-h-screen transition-opacity duration-500 ${isVisible ? (isLoading ? 'opacity-0' : 'opacity-100') : 'opacity-0'}`}>
         <Navbar />
         <Hero />
         <About />
